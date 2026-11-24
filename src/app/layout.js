@@ -26,6 +26,7 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import SiteInteractions from "@/components/layout/SiteInteractions";
+import { Analytics } from "@vercel/analytics/next";
 
 
 export const metadata = {
@@ -49,6 +50,7 @@ export default function RootLayout({ children }) {
         <Header />
         <main id="main-content">{children}</main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
